@@ -1,0 +1,47 @@
+h1{
+  font-size: 60px;
+  color: black;
+}
+h2{
+  font-size: 40px;
+  color:brown;
+}
+.background-image2
+{
+  height: 1300px;
+  width: 100%;
+  background-image: linear-gradient(rgb(179, 208, 221), rgb(8, 140, 201));
+}
+.background-image3
+{
+    padding-top: 30px;
+    height: 1160px;
+    background-color: white;
+    box-shadow: gray;
+}
+
+.button{
+  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: blue;
+  color: aliceblue;
+}
+.button:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.background-image3{
+  border-radius: 25px;
+
+}
+.form-control{
+  border-radius: 30px;
+  background-color: rgb(243, 239, 239);
+}

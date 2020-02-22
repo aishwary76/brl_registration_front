@@ -1,0 +1,174 @@
+<section>
+
+  <div class="background-image2"><br><br><br><br>
+     <div class="container2">
+        <div class="col-lg-8 m-auto d-block">
+           <div class="background-image3">
+              <div class="col-lg-10 m-auto d-block">
+                <form  [formGroup]="userprofileForm" (ngSubmit)="onSubmit()">
+
+                    <h1 class="text-center" >Blockchain Research Lab</h1><br>
+                    <h2 class="text-center" >Registration Form</h2><br>
+
+                    <div class="form-group">
+                      <label >Name:</label>
+                      <input type="text" class="form-control"  formControlName="name" autocomplete="off">
+
+
+                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger" >
+
+                      <div *ngIf="name.errors.required" >
+                        Name is required
+                      </div>
+                      <div *ngIf="name.errors.pattern" >
+                        Name cannot contain symbols or numbers
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Hosteler</label>
+                      <select class="form-control" formControlName="hosteler">
+                        <option>Yes</option>
+                        <option>No</option>
+
+                      </select>
+                      <div *ngIf="hostele.invalid && (hostele.dirty || hostele.touched)" class="text-danger" >
+
+                        <div *ngIf="hostele.errors.required" >
+                          Please provide detail
+                        </div>
+                      </div>
+                      </div>
+
+
+                    <div class="form-group">
+                      <label for="usr">Roll No.:</label>
+                      <input type="text" class="form-control" formControlName="roll_no" autocomplete="off">
+
+
+                    <div *ngIf="roll_no.invalid && (roll_no.dirty || roll_no.touched)" class="text-danger" >
+
+                     <div *ngIf="roll_no.errors.required" >
+                       Please Enter Roll No.
+                     </div>
+                     <div *ngIf="roll_no.errors.minlength" >
+                       Roll no. must be of 10 digits
+                     </div>
+                     <div *ngIf="roll_no.errors.minlength" >
+                       Roll no. must be of 10 digits
+                     </div>
+                   </div>
+                   </div>
+
+                    <div class="form-group">
+                       <label for="sel1">Select Branch:</label>
+                       <select class="form-control" formControlName="branch">
+                         <option>IT</option>
+                         <option>CSE</option>
+                         <option>ECE</option>
+                         <option>Other</option>
+                       </select>
+
+
+                    <div *ngIf="branch.invalid && (branch.dirty || branch.touched)" class="text-danger" >
+
+                      <div *ngIf="branch.errors.required" >
+                        Please select Branch
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="usr">Email Id:</label>
+                      <input type="text" class="form-control" formControlName="email"autocomplete="off">
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger" >
+
+                     <div *ngIf="email.errors.required" >
+                       Please enter email id
+                     </div>
+                     <div *ngIf="email.errors.pattern">
+                      Please enter correct email
+                    </div>
+
+                   </div>
+                    </div>
+
+                    <div class="form-group">
+                       <label for="sel1">Select Year:</label>
+                       <select class="form-control" formControlName="year">
+                         <option>1</option>
+                         <option>2</option>
+                         <option>3</option>
+                         <option>4</option>
+                       </select>
+
+
+                    <div *ngIf="year.invalid && (year.dirty || year.touched)" class="text-danger" >
+
+                      <div *ngIf="year.errors.required" >
+                        Please select Year
+                      </div>
+                    </div>
+                    </div>
+
+
+
+
+                     <div class="form-group">
+                       <label for="usr">Percentage %:</label>
+                       <input type="text" class="form-control" formControlName="percentage" autocomplete="off">
+
+
+                     <div *ngIf="percentage.invalid && (percentage.dirty || percentage.touched)" class="text-danger" >
+
+                      <div *ngIf="percentage.errors.required" >
+                        Required
+                      </div>
+                    </div>
+                     </div>
+
+                     <div class="form-group">
+                       <label for="usr">Attendance %:</label>
+                       <input type="text" class="form-control" formControlName="attendance" autocomplete="off">
+
+
+                     <div *ngIf="attendance.invalid && (attendance.dirty || attendance.touched)" class="text-danger" >
+
+                      <div *ngIf="attendance.errors.required" >
+                        Required
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="usr">Mobile Number:</label>
+                      <input type="text" class="form-control" formControlName="mobile_no" autocomplete="off">
+
+                    <div *ngIf="mobile_no.invalid && (mobile_no.dirty || mobile_no.touched)" class="text-danger" >
+
+                     <div *ngIf="mobile_no.errors.required" >
+                       Mobile number is required
+                     </div>
+                     <div *ngIf="mobile_no.errors.minlength" >
+                       Must be of 10 digits
+                     </div>
+                     <div *ngIf="mobile_no.errors.maxlength" >
+                       Must be of 10 digits
+                     </div>
+
+                   </div>
+                    </div>
+
+                      <br>
+
+                     <button class="button" type="submit"> Submit</button>
+                 </form>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
